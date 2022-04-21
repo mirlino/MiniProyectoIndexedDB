@@ -27,7 +27,7 @@ Con el motivo de adquirir conocimiento nuevo, he creado una pequeña aplicación
 ___
 ## Luego de haber guadado una data veras lo siguiente:
 
-![Preview](img/https://raw.githubusercontent.com/mirlino/MiniProyectoIndexedDB/master/img/preview_two.PNG "Vista Previa Al guardar un registro.")
+![Preview](https://raw.githubusercontent.com/mirlino/MiniProyectoIndexedDB/master/img/preview_two.PNG "Vista Previa Al guardar un registro.")
 
 Como se puede apreciar podrás ver una tabla que muestra un ID, Hora, actividad, Observación, Duración, Modificar y Borrar, cada una tiene la información necesaria del mismo, pero se dará una breve descripción del significado de cada elemento a continuación:
 
