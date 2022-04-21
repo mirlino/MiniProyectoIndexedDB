@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Mirlino Marine">
+    <meta name="description" content="Proyecto de actividad personal de aprndizaje">
+    <meta name="keywords" content="HTML, JavaScript, IndexedDB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Agenda Personal</title>
+  </head>
+  <body>
+    <header>
+      <hgroup><h1>Proyecto de aprendizaje creación IndexedDB</h1></hgroup>
+      <p>Proyecto de aprendisaje para conocer los conceptos básicos sobre IndexedDB</p>
+    </header>
+    <fieldset>
+      <label for="year">* Hora</label>
+      <input type="number" name="day" id="day" value="" size="4" min="1" max="31" placeholder="Día"><span>-</span>
+      <input type="text" name="month" id="month" value="" size="2" placeholder="Mes"><span>-</span>
+      <input type="number" name="year" id="year" value="" size="4" min="1987" max="2100" placeholder="Año">
+      <input type="number" name="hour" id="hour" value="" size="3" min="01" max="24" placeholder="Hora"><span>:</span>
+      <input type="number" name="minutes" id="minutes" value="" size="3" min="00" max="60" placeholder="Min."><span>:</span>
+      <input type="number" name="seconds" id="seconds" value="" size="3" min="00" max="60" placeholder="Seg.">
+      <input type="hidden" name="timestamp" id="timestamp" value="">
+      <input type="hidden" name="id" id="id" value="">
+      <button onclick="update()">Actualizar</button>
+      <br><br>
+      <label for="activities">* Actividad:</label>
+      <input list="list" name="activities" id="activities" size="50">
+      <br><br>
+      <label for="observation">* Observación</label>
+      <input type="text" name="observation" id="observation" size="50">
+    </fieldset>
+    <button onclick="save()">Enviar datos</button>
+    <button onclick="deleteRegistry()">Borrar el registro completo</button>
+    <br><br>
+    <div id="salida">
+    </div>
+    <br>
+
+    <datalist id="list">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Internet Explorer">
+        <option value="Opera">
+        <option value="Safari">
+        <option value="Microsoft Edge">
+    </datalist>
+    <script src="js/main.js"></script>
+  </body>
+</html>
